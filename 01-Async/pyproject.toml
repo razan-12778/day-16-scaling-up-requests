@@ -1,0 +1,26 @@
+[project]
+name = "lwasync"
+version = "0.1.0"
+description = ""
+authors = [{ name = "S. Saunier", email = "seb@lewagon.org" }]
+requires-python = '>=3.12.8,<3.13.0'
+dependencies = [
+    'fastapi (>=0.115.6,<0.116.0)',
+    "uvicorn[standard] (>=0.54.0,<0.55.0)",
+    'pandas (>=2.2.3,<3.0.0)',
+    'requests (>=2.32.3,<3.0.0)',
+    'aiohttp (>=3.11.11,<4.0.0)',
+]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

@@ -1,0 +1,15 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.8, pytest-8.3.4, pluggy-1.5.0 -- /home/wasapi/code/razan-12778/data-engineering-challenges/04-Data-at-Scale/05-Scaling-Up-Requests/01-Async/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/wasapi/code/razan-12778/data-engineering-challenges/04-Data-at-Scale/05-Scaling-Up-Requests/01-Async
+configfile: pyproject.toml
+plugins: anyio-4.8.0
+collecting ... collected 5 items
+
+tests/test_sayhi.py::test_sync_one PASSED                                [ 20%]
+tests/test_sayhi.py::test_sync_many PASSED                               [ 40%]
+tests/test_sayhi.py::test_async_faster PASSED                            [ 60%]
+tests/test_serverless.py::test_dockerfile PASSED                         [ 80%]
+tests/test_serverless.py::test_registry_prefix PASSED                    [100%]
+
+============================== 5 passed in 14.70s ==============================
